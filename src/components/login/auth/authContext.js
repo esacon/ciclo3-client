@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cookie from 'react-cookies';
 const { OAuth2Client } = require('google-auth-library');
 
-const CLIENT_ID = '819657394751-viq5524nlnaulgi12eh0t2jgsvd8jofo.apps.googleusercontent.com';
+const CLIENT_ID = '819657394751-u81jl3tvgmpsa7jr2r8p9m68i78qkmpu.apps.googleusercontent.com';
 const LOGIN_ADMIN = 'LOGIN_ADMIN';
 const LOGIN_VENDEDOR = 'LOGIN_VENDEDOR';
 

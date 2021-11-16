@@ -70,7 +70,7 @@ const Login = () => {
                         <div className="loginBox">
                             <h4 class="mg-l">Inicie sesión: </h4>
                             <GoogleLogin
-                                clientId="819657394751-viq5524nlnaulgi12eh0t2jgsvd8jofo.apps.googleusercontent.com"
+                                clientId="819657394751-u81jl3tvgmpsa7jr2r8p9m68i78qkmpu.apps.googleusercontent.com"
                                 buttonText="Login"
                                 onSuccess={responseGoogle}
                                 onFailure={responseGoogle}
