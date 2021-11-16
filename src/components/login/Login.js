@@ -17,6 +17,7 @@ const Login = () => {
     const {login, loginAdmin, logout} = useAuthContext();
 
     const responseGoogle = async (response) => {
+        console.log(response);
         if (response.tokenId) {
             try {
                 cookie.save('token', response.tokenId);
