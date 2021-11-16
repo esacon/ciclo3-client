@@ -21,7 +21,7 @@ const Login = () => {
             try {
                 cookie.save('token', response.tokenId);
 
-                const user = await fetch('http://localhost:5000/api/addUser', {
+                const user = await fetch('https://git.heroku.com/pub-ciclo3-server.git/api/addUser', {
                     method: 'POST',
                     headers: {
                         'Accept': 'application/json',

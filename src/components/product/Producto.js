@@ -15,7 +15,7 @@ const Producto = () => {
 
     const getProductos = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/api/productos/get');
+            const response = await axios.get('https://git.heroku.com/pub-ciclo3-server.git/api/productos/get');
             console.log(response.data.products);
             setProductos(response.data.products);
             setProductos2(response.data.products);
