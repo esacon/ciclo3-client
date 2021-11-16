@@ -5,15 +5,6 @@ import "react-datepicker/dist/react-datepicker.css";
 import Select from 'react-select';
 
 const ModificarVenta = () => {
-
-    function getDate(fecha) {        
-        const date = new Date(Date.parse(fecha));
-        console.log(date)
-        const d = date.getDate();
-        const m = date.getMonth(); 
-        const y = date.getFullYear();
-        return new Date(`${d}-${m}-${y}`);
-    }
     
     const estadoVenta = [
         {value:0, label:"En proceso"},
