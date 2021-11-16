@@ -9,7 +9,7 @@ const RegistrarProducto = () => {
                     <div class="col-12 user-img">
                         <img src="https://media.istockphoto.com/vectors/cheers-with-beer-icon-handdrawn-vector-id1151319903?k=20&m=1151319903&s=170667a&w=0&h=n_90_xf2n85by03GIMHcfASRKMHI5mJqSLyoMg6foVw=" alt="icon" />
                     </div>
-                    <form class="row g-3" action="https://git.heroku.com/pub-ciclo3-server.git/api/product/register" method="post">
+                    <form class="row g-3" action="https://pub-ciclo3-server.herokuapp.com/api/product/register" method="post">
                         <h4 class="col-12">Registrar producto: </h4>
                         <div class="col-12 mt-2">
                             <label for="nombre" class="form-label">Nombre:</label>

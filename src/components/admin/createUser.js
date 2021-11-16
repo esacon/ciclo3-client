@@ -19,7 +19,7 @@ function SignUp(){
 
   const getUsersPendientes = async () => {
       try {
-          const response = await axios.get('https://git.heroku.com/pub-ciclo3-server.git/api/pendientes');
+          const response = await axios.get('https://pub-ciclo3-server.herokuapp.com/api/pendientes');
           console.log(response.data.users);
           setusers(response.data.users);
       } catch (error) {
@@ -50,7 +50,7 @@ function SignUp(){
       <div class="container">
         <div class="row">
           <div class="col-sm-6 offset-sm-3 shadow mt-5 p-4 rounded">
-            <form class="row g-3" action="https://git.heroku.com/pub-ciclo3-server.git/api/editClient" method="post"> 
+            <form class="row g-3" action="https://pub-ciclo3-server.herokuapp.com/api/editClient" method="post"> 
               <div class="col-12 mt-2">
                 <label for="inputUsers" class="form-label">Usuarios</label>                
                 <select class="form-select" name="emailSelector" onChange={selectUser}> 

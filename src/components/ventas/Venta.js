@@ -16,7 +16,7 @@ const Venta = () => {
 
     const getProductos = async () => {
         try {
-            const response = await axios.get('https://git.heroku.com/pub-ciclo3-server.git/api/ventas/get');
+            const response = await axios.get('https://pub-ciclo3-server.herokuapp.com/api/ventas/get');
             setVentas(response.data.ventas);
             setVentas2(response.data.ventas);
         } catch (error) {

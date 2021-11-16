@@ -19,7 +19,7 @@ const ModificarProducto = () => {
 
     const getProductos = async () => {
         try {
-            const response = await axios.get('https://git.heroku.com/pub-ciclo3-server.git/api/productos/get');
+            const response = await axios.get('https://pub-ciclo3-server.herokuapp.com/api/productos/get');
             console.log(response.data.products);
             setProductos(response.data.products);
         } catch (error) {
@@ -73,7 +73,7 @@ const ModificarProducto = () => {
                     <div class="col-12 user-img">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6MlkOcfm3WFyiWvOGuk0U0ZpsYaTcjNfjzF60r5-jVk4a-W-N1IXfcLZLwna6ngmfDx8&usqp=CAU" alt="icon" />
                     </div>
-                    <form class="row g-3" action="https://git.heroku.com/pub-ciclo3-server.git/api/product/update" method="post">
+                    <form class="row g-3" action="https://pub-ciclo3-server.herokuapp.com/api/product/update" method="post">
                         <h4 class="col-12">Modificar producto: </h4>                          
                         <div class="col-12 mt-2">
                             <label for="uuid" class="form-label">Identificador:</label>
