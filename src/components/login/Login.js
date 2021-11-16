@@ -35,6 +35,7 @@ const Login = () => {
                 });
 
                 const content = await user.json();
+                console.log(content);
                 if (content.role === 1){
                     console.log("Vendedor conectado.");
                     login();
